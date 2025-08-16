@@ -13,6 +13,7 @@ Next steps:
 	- make a folder for dev scripts? (ONLY IF NEEDED)
 	- make a folder for all-user scripts (e.g. lords-prayer)
 - change $mind-place (or whatever it is) to $happy-place (to allow for different future mind places being explored)
+- make a very basic "dev-self-soothe" script, that you can give commands to (e.g. take a note of a thing to do, which goes in a text file; display things to do; remove something from things to do and give a congrats message) and otherwise just runs the bash commands you give it like normal
 
 Reminders:
 - only make the next small bit that you need
@@ -25,7 +26,9 @@ Reminders:
 	- etc.
 
 Future features:
-- When exploring the mind places, have the normal "explore" mode, and an "explore and create mode" (where you explore and can edit things in the pre-set ways)
+- When exploring the mind places in "explore and create later" mode, you explore normally, and also have an action where you can add notes for yourself of things to change/fix/do, which are appended to a future-changes.txt file
+- In the above "explore and create later" mode, have what happens at the end be a 'create' script/program, which shows you the contents of future-changes.txt as you go, displayed with their line number, and when you tell the program that you completed a line, it removes it from the file and displays a congratulations message 
+- Make an "explore and create" mode, where you explore normally, and can at any time pause and enter create mode
 
 Future refactors:
 - Things like rooms are called 'objects'. The rooms folder goes in the 'objects' folder.
