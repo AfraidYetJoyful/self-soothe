@@ -12,6 +12,7 @@ Next steps:
 	- make a folder for non-dev scripts (so, users that aren't devs)? (ONLY IF NEEDED)
 	- make a folder for dev scripts? (ONLY IF NEEDED)
 	- make a folder for all-user scripts (e.g. lords-prayer)
+- change $mind-place (or whatever it is) to $happy-place (to allow for different future mind places being explored)
 
 Reminders:
 - only make the next small bit that you need
@@ -22,6 +23,9 @@ Reminders:
 	- write that second thing
 	- fix the things in the tiny driver
 	- etc.
+
+Future features:
+- When exploring the mind places, have the normal "explore" mode, and an "explore and create mode" (where you explore and can edit things in the pre-set ways)
 
 Future refactors:
 - Things like rooms are called 'objects'. The rooms folder goes in the 'objects' folder.
