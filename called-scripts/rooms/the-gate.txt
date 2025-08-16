@@ -1,0 +1,10 @@
+
+<name>The Gate</name>
+
+<text>
+There is a gate set into the wall of rammed earth that encircles Safe Place. It is made of metal, and holding it closed is a combination lock.
+
+You know the passcode. Did you tell it to anyone? No. Can people climb the wall? No, all people feel the same instinct that you do-- the way to enter is by the gate, or not at all.
+
+You enter the passcode, sliding each ring into place. You click the lock open, open the gate, go through it, close the gate, and close the lock, turning each ring dutifully back to 0. You let go of the lock. You pull gently on the gate with one hand, and it holds firmly in place.
+</text>
