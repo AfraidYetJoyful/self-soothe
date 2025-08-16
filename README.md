@@ -24,6 +24,7 @@ Reminders:
 	- write that second thing
 	- fix the things in the tiny driver
 	- etc.
+ - make testing scripts
 
 Future features:
 - When exploring the mind places in "explore and create later" mode, you explore normally, and also have an action where you can add notes for yourself of things to change/fix/do, which are appended to a future-changes.txt file
