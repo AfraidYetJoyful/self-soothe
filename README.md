@@ -14,6 +14,7 @@ Next steps:
 	- make a folder for all-user scripts (e.g. lords-prayer)
 - change $mind-place (or whatever it is) to $happy-place (to allow for different future mind places being explored)
 - make a very basic "dev-self-soothe" script, that you can give commands to (e.g. take a note of a thing to do, which goes in a text file; display things to do; remove something from things to do and give a congrats message) and otherwise just runs the bash commands you give it like normal
+- pare down each script to the bare bones
 
 Reminders:
 - only make the next small bit that you need
