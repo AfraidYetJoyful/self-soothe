@@ -20,30 +20,30 @@ q[uit] quit\n
 if [[ $@ =~ n.* ]]; then
 	echo "What is the name of the new room's folder?"
 	read rm_fname
-	echo "What is the name of the new room?"
-	read rm_name
+	read -p "What is the name of the new room?" rm_name
 	if [ ${#rm_fname} == 0 ]; then
 		exit 1
 	fi
-	if [ ${rm_name} == 0 ]; then
+	if [ ${#rm_name} == 0 ]; then
 		exit 1
 	fi
 	echo "What is the text displayed when in the room? (press ENTER to continue)"
 	read placeholder
 	touch temp.txt
-	$text_editor temp.txt
-	if [ ${#$(cat temp.txt)} == 0 ]; then
-		rm temp.txt
-		exit 1
-	fi
+	vim temp.txt
+	#$text_editor temp.txt
+#	if [ ${#$(cat temp.txt)} == 0 ]; then
+#		rm temp.txt
+#		exit 1
+#	fi
 
 	mkdir $rm_fname
 	cd $rm_fname
 	touch name.txt
 	echo $rm_name >> name.txt
 	touch text.txt
-	echo $(cat temp.txt) >> text.txt
-	rm temp.txt
+	echo $(cat ../temp.txt) >> text.txt
+	rm ../temp.txt
 elif [[ $@ =~ l.* ]]; then
 	#FK TODO
 	echo todo
