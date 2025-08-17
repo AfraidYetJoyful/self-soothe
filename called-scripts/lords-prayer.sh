@@ -26,6 +26,7 @@ p "and the glory,"
 p "forever and ever."
 p "Amen."
 
+read placeholder
 echo ""
 
 
