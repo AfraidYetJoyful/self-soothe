@@ -48,6 +48,10 @@ else
 	launcher_location="$intended_parent/self-soothe"
 fi
 
+#FK clone the self-soothe directory to the appropriate place
+cd $intended_parent
+git clone https://github.com/AfraidYetJoyful/self-soothe.git || error_exit "something went wrong when cloning the git repository"
+
 #FK make a self-soothe launcher script
 touch ss-launcher.sh
 echo "cd $intended_parent/self-soothe" >> ss-launcher.sh
@@ -57,3 +61,6 @@ chmod +x ss-launcher.sh
 
 #FK move the self-soothe launcher script to desired location
 mv ss-launcher.sh $launcher_location
+
+#FK move to the launcher script's directory
+cd $launcher_location
