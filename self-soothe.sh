@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #FK where can you find the scripts?
-scripts=~/self-soothe/called-scripts
+scripts=~/self-soothe/tools
 
-#FK Load in environmental variables
+#FK Load in environment variables
 cd $scripts
 source ./environment-variables.sh
 
 #FK Display welcome message
-echo "Hello, $name! Welcome to $mind_place_name."
+echo "Hello, $name! Welcome to the self-soothe program."
 
 #FK Pray the Lord's Prayer (in future, have this as one of the options)
 cd $scripts
