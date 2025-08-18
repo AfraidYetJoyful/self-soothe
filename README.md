@@ -12,7 +12,6 @@ Next steps:
 	- make a folder for non-dev scripts (so, users that aren't devs)? (ONLY IF NEEDED)
 	- make a folder for dev scripts? (ONLY IF NEEDED)
 	- make a folder for all-user scripts (e.g. lords-prayer)
-- change $mind-place (or whatever it is) to $happy-place (to allow for different future mind places being explored)
 - pare down each script to the bare bones
 - make the overall self-soothe script let you pick between options
 - start making a more general "self-talk" chat bot thing
