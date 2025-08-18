@@ -56,11 +56,11 @@ git clone https://github.com/AfraidYetJoyful/self-soothe.git || error_exit "some
 
 #FK make a self-soothe launcher script
 cd $launcher_location #FK move to desired location for self-soothe launcher script
-touch ss-launcher.sh
-echo "cd $intended_parent/self-soothe" >> ss-launcher.sh
-echo "./self-soothe.sh" >> ss-launcher.sh
-echo "cd $launcher_location" >> ss-launcher.sh
-chmod +x ss-launcher.sh
+touch launcher-ss.sh
+echo "cd $intended_parent/self-soothe" >> launcher-ss.sh
+echo "./self-soothe.sh" >> launcher-ss.sh
+echo "cd $launcher_location" >> launcher-ss.sh
+chmod +x launcher-ss.sh
 
 #FK remove this file
 cd $install_script_dir
