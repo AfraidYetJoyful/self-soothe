@@ -69,4 +69,4 @@ mv ss-launcher.sh $launcher_location || echo -e "ignore previous error; working 
 cd $launcher_location
 
 #FK remove this file
-rm $install_script_dir/$0
+rm $0
