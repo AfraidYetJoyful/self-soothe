@@ -15,7 +15,7 @@ Next steps:
 - pare down each script to the bare bones
 - make the overall self-soothe script let you pick between options
 - start making a more general "self-talk" chat bot thing
-- make a script to set up the environmental variables
+- make a script to set up the environmental variables (add to install.sh)
 
 Reminders:
 - only make the next small bit that you need
