@@ -35,18 +35,17 @@ if [ $1 == "--help" ]; then
 fi
 
 #FK find the current directory
-install_script_dir=$(cwd)
+install_script_dir=$(pwd)
 
 #FK get the intended parent directory for self-soothe
-intended_parent=$1
+intended_parent=$(realpath -f $1)
 cd $intended_parent || error_exit "the intended parent directory is invalid"
 
 #FK get the launcher script directory
 if [ $# == 2 ]; then
-	launcher_location=$2
-	cwd=$(pwd)
+	cd $install_script_dir
+	launcher_location=$(realpath -f $2)
 	cd $launcher_location || error_exit "the intended launcher script directory is invalid"
-	cd $cwd
 else
 	launcher_location="$intended_parent/self-soothe"
 fi
@@ -56,17 +55,16 @@ cd $intended_parent
 git clone https://github.com/AfraidYetJoyful/self-soothe.git || error_exit "something went wrong when cloning the git repository"
 
 #FK make a self-soothe launcher script
+cd $launcher_location #FK move to desired location for self-soothe launcher script
 touch ss-launcher.sh
 echo "cd $intended_parent/self-soothe" >> ss-launcher.sh
 echo "./self-soothe.sh" >> ss-launcher.sh
 echo "cd $launcher_location" >> ss-launcher.sh
 chmod +x ss-launcher.sh
 
-#FK move the self-soothe launcher script to desired location
-mv ss-launcher.sh $launcher_location || echo -e "ignore previous error; working as intended"
+#FK remove this file
+cd $install_script_dir
+rm $0
 
 #FK move to the launcher script's directory
 cd $launcher_location
-
-#FK remove this file
-rm $0
