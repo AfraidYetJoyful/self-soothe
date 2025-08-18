@@ -6,6 +6,6 @@ tools_location=$self_soothe_location/tools
 
 name="Finn"
 
-mind_place_name="Safe Place"
+happy_place="Safe Place"
 
 text_editor="vim"
