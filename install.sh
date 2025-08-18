@@ -34,6 +34,9 @@ if [ $1 == "--help" ]; then
 	do_help
 fi
 
+#FK find the current directory
+install_script_dir=$(cwd)
+
 #FK get the intended parent directory for self-soothe
 intended_parent=$1
 cd $intended_parent || error_exit "the intended parent directory is invalid"
@@ -60,7 +63,10 @@ echo "cd $launcher_location" >> ss-launcher.sh
 chmod +x ss-launcher.sh
 
 #FK move the self-soothe launcher script to desired location
-mv ss-launcher.sh $launcher_location
+mv ss-launcher.sh $launcher_location || echo -e "ignore previous error; working as intended"
 
 #FK move to the launcher script's directory
 cd $launcher_location
+
+#FK remove this file
+rm $install_script_dir/$0
