@@ -38,13 +38,13 @@ fi
 install_script_dir=$(pwd)
 
 #FK get the intended parent directory for self-soothe
-intended_parent=$(realpath -f $1)
+intended_parent=$(realpath $1)
 cd $intended_parent || error_exit "the intended parent directory is invalid"
 
 #FK get the launcher script directory
 if [ $# == 2 ]; then
 	cd $install_script_dir
-	launcher_location=$(realpath -f $2)
+	launcher_location=$(realpath $2)
 	cd $launcher_location || error_exit "the intended launcher script directory is invalid"
 else
 	launcher_location="$intended_parent/self-soothe"
