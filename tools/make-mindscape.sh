@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#FK import environment variables
+source ../environment-variables.sh
+
 #FK intro message
 #FK TODO move this part into a more general 'make-stuff-intro' script
 echo "Hello, $name! So glad you could make it, friend.
@@ -15,6 +18,6 @@ What will you make/edit?"
 
 read thing
 if [[ $thing =~ r.* ]]; then
-	cd $scripts
+	cd $tools_location
 	source ./room.sh
 fi
